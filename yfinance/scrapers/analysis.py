@@ -1,7 +1,7 @@
 import pandas as pd
 
-from yfinance.data import YfData
-from yfinance.exceptions import YFNotImplementedError
+from ..data import YfData
+from ..exceptions import YFNotImplementedError
 
 
 class Analysis:

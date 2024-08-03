@@ -5,9 +5,9 @@ import numpy as np
 import pandas as pd
 import time as _time
 
-from yfinance import shared, utils
-from yfinance.const import _BASE_URL_, _PRICE_COLNAMES_
-from yfinance.exceptions import YFChartError, YFInvalidPeriodError, YFPricesMissingError, YFTzMissingError
+from .. import shared, utils
+from ..const import _BASE_URL_, _PRICE_COLNAMES_
+from ..exceptions import YFChartError, YFInvalidPeriodError, YFPricesMissingError, YFTzMissingError
 
 class PriceHistory:
     def __init__(self, data, ticker, tz, session=None, proxy=None):

@@ -38,7 +38,7 @@ import requests as _requests
 from dateutil.relativedelta import relativedelta
 from pytz import UnknownTimeZoneError
 
-from yfinance import const
+from . import const
 from .const import _BASE_URL_
 
 user_agent_headers = {

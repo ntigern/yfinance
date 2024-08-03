@@ -5,10 +5,10 @@ import numpy as _np
 import pandas as pd
 import requests
 
-from yfinance import utils
-from yfinance.data import YfData
-from yfinance.const import quote_summary_valid_modules, _BASE_URL_
-from yfinance.exceptions import YFDataException, YFException
+from .. import utils
+from ..data import YfData
+from ..const import quote_summary_valid_modules, _BASE_URL_
+from ..exceptions import YFDataException, YFException
 
 info_retired_keys_price = {"currentPrice", "dayHigh", "dayLow", "open", "previousClose", "volume", "volume24Hr"}
 info_retired_keys_price.update({"regularMarket"+s for s in ["DayHigh", "DayLow", "Open", "PreviousClose", "Price", "Volume"]})
