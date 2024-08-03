@@ -586,7 +586,7 @@ class Quote:
         if self._already_fetched:
             return
         self._already_fetched = True
-        modules = ['financialData', 'quoteType', 'defaultKeyStatistics', 'assetProfile', 'summaryDetail']
+        modules = ['financialData', 'quoteType', 'defaultKeyStatistics', 'assetProfile', 'summaryDetail', 'fundProfile']
         result = self._fetch(proxy, modules=modules)
         if result is None:
             self._info = {}
