@@ -1,6 +1,110 @@
 Change Log
 ===========
 
+0.2.54
+------
+Hotfix user-agent #2277
+
+0.2.53
+------
+Fixes:
+- Fix: Failed to parse holders JSON data  #2234
+- Fix: Bad data in Holders #2244
+- Stop CSRF-cookie-fetch fail killing yfinance #2249
+- Fix Market Docs #2250
+- Fix: Broken "See also" links in documentation #2253
+- Fix: Interval check and error message formatting in multi.py #2256
+Improve:
+- Add pre- / post-stock prices (and other useful information) #2212
+- Warn user when use download() without specifying auto_adjust #2230
+- Refactor: Earnings Dates – Switch to API Fetching #2247
+- Improve prices div repair #2260
+Maintenance:
+- Add GitHub Actions workflow and fix failing tests #2233
+
+0.2.52
+------
+Features:
+- Improve Screener & docs #2207
+- Add Market summary & status #2175
+- Support custom period in Ticker.history() #2192
+- raise YfRateLimitError if rate limited #2108
+- add more options to Search #2191
+Fixes:
+- remove hardcoded keys in Analysis #2194
+- handle Yahoo changed Search response #2202
+Maintenance:
+- add optional dependencies to requirements.txt #2199
+
+0.2.51
+------
+Features:
+- Screener tweaks #2168
+- Search #2160
+- get_news() expose count #2173
+Fixes:
+- earnings_dates #2169
+
+0.2.50
+------
+Fixes:
+- price repair #2111 #2139
+- download() appearance 2109
+- isin() error #2099
+- growth_estimates #2127
+Also new docs #2132
+
+0.2.49
+------
+Fix prices-clean rarely discarding good data #2122
+
+0.2.47 and 0.2.48
+-----------------
+Add yf.download(multi_level_index)
+
+0.2.46
+------
+Fix regression in 0.2.45 #2094
+
+0.2.45
+------
+Features:
+- Screener #2066 @ericpien
+Fixes
+- Tickers keyerror #2068 @antoniouaa
+- IndexError in some history() debug messages #2087
+- improve dividend repair #2090
+Maintenance
+- fix unit tests contextual imports #2067
+- fix typos #2072 @algonell
+- add Pyright type checking #2059 @marco-carvalho
+
+0.2.44
+------
+Features:
+- fetch funds #2041
+- fetch sector & industry #2058
+Fixes:
+- improve dividend repair #2062
+
+0.2.43
+------
+Fix price-repair bug introduced in 0.2.42 #2036
+
+0.2.42
+------
+Features:
+- fetch SEC filings #2009
+- fetch analysis #2023 @Fidasek009
+- price repair extended to dividends & adjust #2031
+Fixes:
+- fix error on empty options chain #1995 @stevenbischoff
+- use dict.get() to safely access key in Holders #2013 @ericpien
+- fix datetime conversion with mixed timezones when ignore_tz is False #2016 @mreiche
+- handle faulty response object when getting news. #2021 @ericpien
+Maintenance:
+- prices: improve exceptions and logging #2000
+
 0.2.41
 ------
 Improvements:
@@ -333,7 +437,7 @@ Jumping to 0.2 for this big update. 0.1.* will continue to receive bug-fixes
 - Fix timezone handling
 - Fix handling of missing data
 - Clean&format earnings_dates table
-- Add ``.get_earnings_dates()`` to retreive earnings calendar
+- Add ``.get_earnings_dates()`` to retrieve earnings calendar
 - Added ``.get_earnings_history()`` to fetch earnings data
 
 0.1.70
@@ -645,7 +749,7 @@ Jumping to 0.2 for this big update. 0.1.* will continue to receive bug-fixes
 - Removed 5 second wait for every failed fetch
 - Reduced TTL for Yahoo!'s cookie
 - Keeps track of failed downloads and tries to re-download all failed downloads one more time before giving up
-- Added progress bar (can be turned off useing ``progress=False``)
+- Added progress bar (can be turned off using ``progress=False``)
 
 0.0.7
 -------
