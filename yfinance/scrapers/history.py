@@ -7,9 +7,9 @@ from math import isclose
 import time as _time
 import bisect
 
-from yfinance import shared, utils
-from yfinance.const import _BASE_URL_, _PRICE_COLNAMES_
-from yfinance.exceptions import YFInvalidPeriodError, YFPricesMissingError, YFTzMissingError, YFRateLimitError
+from .. import shared, utils
+from ..const import _BASE_URL_, _PRICE_COLNAMES_
+from ..exceptions import YFInvalidPeriodError, YFPricesMissingError, YFTzMissingError, YFRateLimitError
 
 class PriceHistory:
     def __init__(self, data, ticker, tz, session=None, proxy=None):

@@ -2,8 +2,8 @@ from .query import EquityQuery as EqyQy
 from .query import FundQuery as FndQy
 from .query import QueryBase, EquityQuery, FundQuery
 
-from yfinance.const import _BASE_URL_
-from yfinance.data import YfData
+from ..const import _BASE_URL_
+from ..data import YfData
 
 from ..utils import dynamic_docstring, generate_list_table_from_dict_universal
 

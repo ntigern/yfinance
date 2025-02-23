@@ -2,9 +2,9 @@ from abc import ABC, abstractmethod
 import numbers
 from typing import List, Union, Dict, TypeVar, Tuple
 
-from yfinance.const import EQUITY_SCREENER_EQ_MAP, EQUITY_SCREENER_FIELDS
-from yfinance.const import FUND_SCREENER_EQ_MAP, FUND_SCREENER_FIELDS
-from yfinance.exceptions import YFNotImplementedError
+from ..const import EQUITY_SCREENER_EQ_MAP, EQUITY_SCREENER_FIELDS
+from ..const import FUND_SCREENER_EQ_MAP, FUND_SCREENER_FIELDS
+from ..exceptions import YFNotImplementedError
 from ..utils import dynamic_docstring, generate_list_table_from_dict_universal
 
 T = TypeVar('T', bound=Union[str, numbers.Real])

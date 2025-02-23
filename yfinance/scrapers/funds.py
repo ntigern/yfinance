@@ -1,9 +1,9 @@
 import pandas as pd
 
-from yfinance.data import YfData
-from yfinance.const import _BASE_URL_
-from yfinance.exceptions import YFDataException
-from yfinance import utils
+from ..data import YfData
+from ..const import _BASE_URL_
+from ..exceptions import YFDataException
+from .. import utils
 
 from typing import Dict, Optional
 
